@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloCalculadora.css">
+    <script src="./js/calc.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div>
+        <header id="visor"></header>
+        <table>
+            <tbody>
+                <tr class="comando">
+                    <td class="botao" onclick="porcento()">%</td>
+                    <td class="botao" onclick="limpar()">CE</td>
+                    <td class="botao" onclick="limpar()">C</td>
+                    <td class="botao" onclick="apagar()">&lt;</td>
+                </tr>
+                <tr class="comando"> 
+                    <td class="botao" onclick="inserir()"> </td>
+                    <td class="botao" onclick="quadrado()">x²</td>
+                    <td class="botao" onclick="negativoPositivo()">+/-</td>
+                    <td class="botao" onclick="inserir('/')">/</td>
+                </tr>
+                <tr>
+                    <td class="botao" onclick="inserir('7')">7</td>
+                    <td class="botao" onclick="inserir('8')">8</td>
+                    <td class="botao" onclick="inserir('9')">9</td>
+                    <td class="botao" onclick="inserir('*')">x</td>
+                </tr>
+                <tr>
+                    <td class="botao" onclick="inserir('4')">4</td>
+                    <td class="botao" onclick="inserir('5')">5</td>
+                    <td class="botao" onclick="inserir('6')">6</td>
+                    <td class="botao" onclick="inserir('-')">-</td>
+                </tr>
+                <tr>
+                    <td class="botao" onclick="inserir('1')">1</td>
+                    <td class="botao" onclick="inserir('2')">2</td>
+                    <td class="botao" onclick="inserir('3')">3</td>
+                    <td class="botao" onclick="inserir('+')">+</td>
+                </tr>
+                <tr>
+                    <td class="botao"> </td>
+                    <td class="botao" onclick="inserir('0')">0</td>
+                    <td class="botao" onclick="inserir('.')">.</td>
+                    <td class="botao" onclick="calcular()">=</td>
+                </tr>	
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
